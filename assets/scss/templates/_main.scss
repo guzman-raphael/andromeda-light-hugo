@@ -165,14 +165,36 @@ $lighter-color: lighten($primary-color, 20%);
     background-color: lighten(saturate(adjust-hue($primary-color, 16), 0.87), 42.94);
     z-index: 1;
 
-    .wave-1,
+    .wave-1 {
+      position: absolute;
+      content: "";
+      height: 100%;
+      z-index: -1;
+      background-color: $lighter-color;
+      -webkit-mask-image: url("images/waves/05.svg");
+      mask-image: url("images/waves/05.svg");
+      -webkit-mask-position: left center;
+      mask-position: left center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100% auto;
+      mask-size: 100% auto;
+    }
+
     .wave-2 {
       position: absolute;
       content: "";
       height: 100%;
-      left: 0;
-      top: 0;
       z-index: -1;
+      background-color: $lighter-color;
+      -webkit-mask-image: url("images/waves/04.svg");
+      mask-image: url("images/waves/04.svg");
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: auto 100%;
+      mask-size: auto 100%;
     }
 
     .circle-1 {
@@ -874,9 +896,16 @@ $lighter-color: lighten($primary-color, 20%);
         position: absolute;
         content: "";
         height: 100%;
-        left: 0;
-        top: 0;
         z-index: -1;
+        background-color: $lighter-color;
+        -webkit-mask-image: url("images/waves/05.svg");
+        mask-image: url("images/waves/05.svg");
+        -webkit-mask-position: left center;
+        mask-position: left center;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% auto;
+        mask-size: 100% auto;
       }
 
       .circle-1 {
